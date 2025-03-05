@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <img src="C:\Users\SURYANSHI\OneDrive\Desktop\Hackthon\Edupath\static\back.jpg" alt="Search Results Image" style="width:200px;height:150px;">
+    <form action="/update" method="POST">
+        <input type="hidden" name="identifier" value="{{ record['identifier'] }}">
+        <p>Column 1: <input type="text" name="column1" value="{{ record['column1'] }}"></p>
+        <p>Column 2: <input type="text" name="column2" value="{{ record['column2'] }}"></p>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
